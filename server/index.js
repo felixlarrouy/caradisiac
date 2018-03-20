@@ -10,8 +10,7 @@ app.use(bodyParser.json())
 
 app.get('/populate', (req, res) => {
   populate.addInElastic((err, results) => {
-    //res.json(results);
-    res.send("hello")
+    res.json(results);
   })
 })
 

@@ -49,6 +49,7 @@ exports.addInElastic = (callback) => {
         cars = cars.concat(models[i])
       }
       addIndexElastic(cars)
+      return callback(null, cars)
     })
   })
 }
