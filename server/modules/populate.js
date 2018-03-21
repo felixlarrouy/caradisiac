@@ -3,12 +3,9 @@ const {
   getModels
 } = require('node-car-api');
 
-const elasticsearch = require('elasticsearch');
+const es = require('./es')
 
-var client = new elasticsearch.Client({
-  host: 'localhost:9200',
-  log: 'trace'
-});
+var client = es.client
 
 function headerElasticSearch(id) {
   return

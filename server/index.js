@@ -14,6 +14,12 @@ app.get('/populate', (req, res) => {
   })
 })
 
+app.get('/suv', (req, res) => {
+  suv.sortSuv((err, results) => {
+    res.json(results)
+  })
+})
+
 const port = 8000
 app.listen(port, () => {
   console.log("Listening on port " + port);
