@@ -8,6 +8,7 @@ exports.sortSuv = (callback) => {
     index: 'cars',
     type: 'car',
     body: {
+      size: 479, 
       sort: {
         volume: {
           order: 'desc'
